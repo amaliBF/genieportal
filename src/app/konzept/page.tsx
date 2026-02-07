@@ -184,11 +184,11 @@ export default function KonzeptPage() {
 
           <div className="grid sm:grid-cols-2 lg:grid-cols-5 gap-4">
             {[
-              { name: 'Ausbildung', domain: 'ausbildungsgenie.de', icon: GraduationCap, colorClass: 'from-blue-500 to-blue-600' },
-              { name: 'Praktikum', domain: 'praktikumsgenie.de', icon: Search, colorClass: 'from-emerald-500 to-emerald-600' },
-              { name: 'Beruf', domain: 'berufsgenie.de', icon: Compass, colorClass: 'from-violet-500 to-violet-600' },
-              { name: 'Minijob', domain: 'minijobgenie.de', icon: Banknote, colorClass: 'from-amber-500 to-amber-600' },
-              { name: 'Werkstudent', domain: 'werkstudentengenie.de', icon: BookOpen, colorClass: 'from-cyan-500 to-cyan-600' },
+              { name: 'Ausbildung', domain: 'ausbildungsgenie.de', icon: GraduationCap, colorClass: 'from-violet-600 to-pink-600' },
+              { name: 'Praktikum', domain: 'praktikumsgenie.de', icon: Search, colorClass: 'from-rose-600 to-pink-600' },
+              { name: 'Beruf', domain: 'berufsgenie.de', icon: Compass, colorClass: 'from-amber-500 to-orange-600' },
+              { name: 'Minijob', domain: 'minijobgenie.de', icon: Banknote, colorClass: 'from-emerald-500 to-green-600' },
+              { name: 'Werkstudent', domain: 'werkstudentengenie.de', icon: BookOpen, colorClass: 'from-cyan-500 to-teal-500' },
             ].map((portal) => (
               <a
                 key={portal.domain}
