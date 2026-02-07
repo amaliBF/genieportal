@@ -15,9 +15,8 @@ export default function Footer() {
               <span className="font-bold">Genieportal</span>
             </div>
             <p className="text-sm leading-relaxed mb-6 max-w-md">
-              Das Genie-Universum: Recruiting neu gedacht mit Video-Matching,
-              KI-Jobfinder und direktem Chat. Für Ausbildung, Praktikum, Beruf,
-              Minijob und Werkstudent.
+              Recruiting neu gedacht mit Video-Matching, KI-Jobfinder und
+              direktem Chat. Für Ausbildung, Praktikum, Beruf, Minijob und Werkstudent.
             </p>
 
             {/* Portale */}
@@ -83,7 +82,7 @@ export default function Footer() {
               © {new Date().getFullYear()} Genieportal – Butterflies IT UG (haftungsbeschränkt). Alle Rechte vorbehalten.
             </div>
             <div>
-              Made with ♥ in Schwerin
+              Ein Projekt der Butterflies IT UG
             </div>
           </div>
         </div>

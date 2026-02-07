@@ -11,11 +11,11 @@ const geistSans = localFont({
 export const metadata: Metadata = {
   metadataBase: new URL('https://genieportal.de'),
   title: {
-    default: 'Genieportal – Recruiting neu gedacht. Das Genie-Universum.',
+    default: 'Genieportal – Recruiting neu gedacht.',
     template: '%s | Genieportal',
   },
   description:
-    'Das Genie-Universum: 5 Job-Portale, eine App, eine Mission. Video-Matching, KI-Jobfinder und direkter Chat. Für Ausbildung, Praktikum, Beruf, Minijob und Werkstudent.',
+    '5 Job-Portale, eine App, eine Mission. Video-Matching, KI-Jobfinder und direkter Chat. Für Ausbildung, Praktikum, Beruf, Minijob und Werkstudent.',
   keywords: [
     'Genieportal',
     'Recruiting',
@@ -49,7 +49,7 @@ export const metadata: Metadata = {
     card: 'summary_large_image',
     title: 'Genieportal – Recruiting neu gedacht',
     description:
-      'Das Genie-Universum: 5 Job-Portale, eine App, eine Mission. Video-Matching & KI-Jobfinder.',
+      '5 Job-Portale, eine App, eine Mission. Video-Matching & KI-Jobfinder.',
   },
   robots: {
     index: true,
@@ -70,7 +70,7 @@ const organizationJsonLd = {
   name: 'Genieportal',
   url: 'https://genieportal.de',
   logo: 'https://genieportal.de/icon.svg',
-  description: 'Das Genie-Universum: Video-Matching, KI-Jobfinder und direkter Chat für Ausbildung, Praktikum, Beruf, Minijob und Werkstudent.',
+  description: 'Recruiting neu gedacht: Video-Matching, KI-Jobfinder und direkter Chat für Ausbildung, Praktikum, Beruf, Minijob und Werkstudent.',
   foundingDate: '2025',
   parentOrganization: {
     '@type': 'Organization',

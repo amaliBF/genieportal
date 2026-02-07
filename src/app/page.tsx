@@ -26,14 +26,14 @@ import Header from '../components/Header';
 import Footer from '../components/Footer';
 
 export const metadata: Metadata = {
-  title: 'Genieportal – Recruiting neu gedacht. Das Genie-Universum.',
+  title: 'Genieportal – Recruiting neu gedacht.',
   description:
-    'Ein Universum. Fünf Welten. Eine App. Video-Matching, KI-Jobfinder und direkter Chat für Ausbildung, Praktikum, Beruf, Minijob und Werkstudent.',
+    '5 Job-Portale. Eine App. Eine Mission. Video-Matching, KI-Jobfinder und direkter Chat für Ausbildung, Praktikum, Beruf, Minijob und Werkstudent.',
   alternates: { canonical: '/' },
   openGraph: {
     title: 'Genieportal – Recruiting neu gedacht',
     description:
-      'Das Genie-Universum: 5 Job-Portale, eine App, eine Mission. Video-Matching & KI-Jobfinder.',
+      '5 Job-Portale, eine App, eine Mission. Video-Matching & KI-Jobfinder.',
     url: 'https://genieportal.de',
   },
 };
@@ -117,7 +117,7 @@ export default function HomePage() {
         <div className="max-w-5xl mx-auto relative z-10 text-center">
           <div className="inline-flex items-center gap-2 rounded-full bg-white/5 border border-violet-500/20 px-5 py-2 text-sm text-violet-300 mb-8 backdrop-blur-sm">
             <Orbit className="h-4 w-4" />
-            <span>Das Genie-Universum</span>
+            <span>Die Recruiting-Revolution</span>
           </div>
 
           <h1 className="text-4xl sm:text-5xl lg:text-7xl font-bold tracking-tight leading-tight">
@@ -654,7 +654,7 @@ export default function HomePage() {
           <div className="grid grid-cols-2 lg:grid-cols-4 gap-6">
             {[
               { value: '5', label: 'Job-Portale', suffix: '', icon: Orbit },
-              { value: '3.000', label: 'SEO-Seiten live', suffix: '+', icon: TrendingUp },
+              { value: '1', label: 'App für alles', suffix: '', icon: Smartphone },
               { value: '5', label: 'Bereiche', suffix: '', icon: Users },
               { value: '<14', label: 'Tage bis Match', suffix: '', icon: Clock },
             ].map((stat) => (
@@ -686,7 +686,7 @@ export default function HomePage() {
             <span className="gradient-text-genie">neu zu denken?</span>
           </h2>
           <p className="text-xl text-gray-400 max-w-2xl mx-auto mb-10">
-            Ob du einen Job suchst oder Talente finden willst – das Genie-Universum
+            Ob du einen Job suchst oder Talente finden willst – Genieportal
             ist für beide Seiten gemacht.
           </p>
 
