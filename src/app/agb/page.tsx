@@ -79,7 +79,7 @@ export default function AGBPage() {
                 </p>
                 <p>
                   1.2 Die Plattform umfasst folgende Job-Portale, die gemeinsam das
-                  &bdquo;Genie-Universum&ldquo; bilden und ueber die Genie App zugaenglich sind:
+                  Genieportal bilden und ueber die Genie App zugaenglich sind:
                 </p>
                 <ul className="list-disc pl-5 space-y-1 text-gray-400">
                   <li>ausbildungsgenie.de &ndash; Ausbildungsplaetze</li>

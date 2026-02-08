@@ -1,5 +1,5 @@
 import Link from 'next/link';
-import { Orbit } from 'lucide-react';
+import { Orbit, ExternalLink } from 'lucide-react';
 
 export default function Footer() {
   return (
@@ -23,19 +23,19 @@ export default function Footer() {
             <h4 className="font-semibold text-gray-300 mb-3 text-sm">Die Job-Portale</h4>
             <div className="flex flex-wrap gap-2 mb-6">
               <a href="https://ausbildungsgenie.de" target="_blank" rel="noopener noreferrer" className="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-full bg-white/5 text-gray-400 hover:text-white hover:bg-white/10 text-xs transition-colors border border-white/5">
-                🎓 Ausbildungsgenie
+                Ausbildungsgenie <ExternalLink className="h-3 w-3" />
               </a>
               <a href="https://praktikumsgenie.de" target="_blank" rel="noopener noreferrer" className="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-full bg-white/5 text-gray-400 hover:text-white hover:bg-white/10 text-xs transition-colors border border-white/5">
-                📋 Praktikumsgenie
+                Praktikumsgenie <ExternalLink className="h-3 w-3" />
               </a>
               <a href="https://berufsgenie.de" target="_blank" rel="noopener noreferrer" className="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-full bg-white/5 text-gray-400 hover:text-white hover:bg-white/10 text-xs transition-colors border border-white/5">
-                🧭 Berufsgenie
+                Berufsgenie <ExternalLink className="h-3 w-3" />
               </a>
               <a href="https://minijobgenie.de" target="_blank" rel="noopener noreferrer" className="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-full bg-white/5 text-gray-400 hover:text-white hover:bg-white/10 text-xs transition-colors border border-white/5">
-                💰 Minijobgenie
+                Minijobgenie <ExternalLink className="h-3 w-3" />
               </a>
               <a href="https://werkstudentengenie.de" target="_blank" rel="noopener noreferrer" className="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-full bg-white/5 text-gray-400 hover:text-white hover:bg-white/10 text-xs transition-colors border border-white/5">
-                📚 Werkstudentengenie
+                Werkstudentengenie <ExternalLink className="h-3 w-3" />
               </a>
             </div>
           </div>
@@ -49,7 +49,7 @@ export default function Footer() {
               <li><Link href="/fuer-unternehmen" className="hover:text-white transition-colors">Für Unternehmen</Link></li>
               <li><Link href="/konzept" className="hover:text-white transition-colors">Konzept</Link></li>
               <li><Link href="/kontakt" className="hover:text-white transition-colors">Kontakt</Link></li>
-              <li><Link href="https://dashboard.genieportal.de/login" className="hover:text-white transition-colors">Betriebe-Login</Link></li>
+              <li><a href="https://dashboard.genieportal.de/login" target="_blank" rel="noopener noreferrer" className="hover:text-white transition-colors inline-flex items-center gap-1">Betriebe-Login <ExternalLink className="h-3 w-3" /></a></li>
             </ul>
           </div>
 
