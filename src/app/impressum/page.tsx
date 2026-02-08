@@ -54,7 +54,7 @@ export default function ImpressumPage() {
                   <p className="pt-3">
                     <span className="text-gray-500">Vertreten durch:</span>
                   </p>
-                  <p>Geschäftsführer Ahmad Ali</p>
+                  <p>Geschäftsführer Andreas Mali</p>
                 </div>
               </div>
 
@@ -149,7 +149,7 @@ export default function ImpressumPage() {
                   Verantwortlich für den Inhalt nach § 18 Abs. 2 MStV
                 </h2>
                 <div className="text-gray-300 space-y-1">
-                  <p className="font-semibold text-white">Ahmad Ali</p>
+                  <p className="font-semibold text-white">Andreas Mali</p>
                   <p>Hagenower Str. 73</p>
                   <p>19061 Schwerin</p>
                 </div>

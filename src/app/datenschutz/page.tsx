@@ -144,11 +144,7 @@ export default function DatenschutzPage() {
                 <div className="text-gray-300 space-y-1 mb-4">
                   <p>
                     <span className="text-gray-500">Vertreten durch:</span>{' '}
-                    Gesch&auml;ftsf&uuml;hrer Ahmad Ali
-                  </p>
-                  <p>
-                    <span className="text-gray-500">Telefon:</span> +49 (0) 385 20 888
-                    200
+                    Gesch&auml;ftsf&uuml;hrer Andreas Mali
                   </p>
                   <p>
                     <span className="text-gray-500">E-Mail:</span>{' '}
@@ -257,8 +253,7 @@ export default function DatenschutzPage() {
                   Die verantwortliche Stelle f&uuml;r die Datenverarbeitung auf dieser
                   Website ist die Butterflies IT UG (haftungsbeschr&auml;nkt),
                   Hagenower Str. 73, 19061 Schwerin, vertreten durch den
-                  Gesch&auml;ftsf&uuml;hrer Ahmad Ali. E-Mail: kontakt@genieportal.de,
-                  Telefon: +49 (0) 385 20 888 200.
+                  Gesch&auml;ftsf&uuml;hrer Andreas Mali. E-Mail: kontakt@genieportal.de.
                 </p>
 
                 <h3 className="text-lg font-semibold text-white mb-3">
