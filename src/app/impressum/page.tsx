@@ -105,10 +105,10 @@ export default function ImpressumPage() {
                     <span>
                       E-Mail:{' '}
                       <a
-                        href="mailto:kontakt@genieportal.de"
+                        href="mailto:support@genieportal.de"
                         className="text-violet-400 hover:text-violet-300 transition-colors underline underline-offset-2"
                       >
-                        kontakt@genieportal.de
+                        support@genieportal.de
                       </a>
                     </span>
                   </p>

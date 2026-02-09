@@ -9,3 +9,4 @@ dist/
 public/.php-ini
 public/.php-version
 public/index.html
+node_modules

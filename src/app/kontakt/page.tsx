@@ -68,10 +68,10 @@ export default function KontaktPage() {
           <p className="text-gray-500 text-sm">
             Oder schreiben Sie uns direkt an{' '}
             <a
-              href="mailto:kontakt@genieportal.de"
+              href="mailto:support@genieportal.de"
               className="text-violet-400 hover:text-violet-300 transition-colors underline underline-offset-2"
             >
-              kontakt@genieportal.de
+              support@genieportal.de
             </a>
           </p>
         </div>

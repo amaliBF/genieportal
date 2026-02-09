@@ -274,7 +274,7 @@ export default function AGBPage() {
                 <p>
                   6.3 Die Kuendigungsfrist fuer Abonnements betraegt <span className="text-white font-medium">einen Monat</span> zum
                   Ende des jeweiligen Abrechnungszeitraums. Die Kuendigung kann ueber das
-                  Firmen-Dashboard oder per E-Mail an kontakt@genieportal.de erfolgen.
+                  Firmen-Dashboard oder per E-Mail an support@genieportal.de erfolgen.
                 </p>
                 <p>
                   6.4 Bei Zahlungsverzug ist der Anbieter berechtigt, den Zugang des
@@ -420,7 +420,7 @@ export default function AGBPage() {
                 <p>
                   10.1 Nutzer (Jobsuchende) koennen ihr Konto jederzeit ohne Einhaltung einer
                   Frist loeschen. Die Loesung erfolgt ueber die Kontoeinstellungen in der App
-                  oder per E-Mail an kontakt@genieportal.de.
+                  oder per E-Mail an support@genieportal.de.
                 </p>
                 <p>
                   10.2 Unternehmen koennen ihr kostenpflichtiges Abonnement mit einer Frist
@@ -529,10 +529,10 @@ export default function AGBPage() {
                   Stand: Februar 2026 | Butterflies IT UG (haftungsbeschraenkt) |
                   Hagenower Str. 73, 19061 Schwerin |{' '}
                   <a
-                    href="mailto:kontakt@genieportal.de"
+                    href="mailto:support@genieportal.de"
                     className="text-violet-400 hover:text-violet-300 transition-colors"
                   >
-                    kontakt@genieportal.de
+                    support@genieportal.de
                   </a>
                 </p>
               </div>

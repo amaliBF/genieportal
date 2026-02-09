@@ -149,10 +149,10 @@ export default function DatenschutzPage() {
                   <p>
                     <span className="text-gray-500">E-Mail:</span>{' '}
                     <a
-                      href="mailto:kontakt@genieportal.de"
+                      href="mailto:support@genieportal.de"
                       className="text-violet-400 hover:text-violet-300 transition-colors underline underline-offset-2"
                     >
-                      kontakt@genieportal.de
+                      support@genieportal.de
                     </a>
                   </p>
                 </div>
@@ -357,7 +357,7 @@ export default function DatenschutzPage() {
                   Die verantwortliche Stelle f&uuml;r die Datenverarbeitung auf dieser
                   Website ist die Butterflies IT UG (haftungsbeschr&auml;nkt),
                   Hagenower Str. 73, 19061 Schwerin, vertreten durch den
-                  Gesch&auml;ftsf&uuml;hrer Andreas Mali. E-Mail: kontakt@genieportal.de.
+                  Gesch&auml;ftsf&uuml;hrer Andreas Mali. E-Mail: support@genieportal.de.
                 </p>
 
                 <h3 className="text-lg font-semibold text-white mb-3">

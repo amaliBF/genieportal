@@ -65,8 +65,8 @@ export default function Footer() {
             <h4 className="font-semibold text-gray-300 mb-3 text-sm mt-8">Kontakt</h4>
             <ul className="space-y-2 text-sm">
               <li>
-                <a href="mailto:kontakt@genieportal.de" className="hover:text-white transition-colors">
-                  kontakt@genieportal.de
+                <a href="mailto:support@genieportal.de" className="hover:text-white transition-colors">
+                  support@genieportal.de
                 </a>
               </li>
             </ul>

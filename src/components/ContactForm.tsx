@@ -24,7 +24,7 @@ export default function ContactForm() {
     );
 
     // Open email client
-    window.location.href = `mailto:kontakt@genieportal.de?subject=${mailtoSubject}&body=${mailtoBody}`;
+    window.location.href = `mailto:support@genieportal.de?subject=${mailtoSubject}&body=${mailtoBody}`;
 
     // Show success after short delay
     setTimeout(() => {
