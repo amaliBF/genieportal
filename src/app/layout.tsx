@@ -1,6 +1,7 @@
 import type { Metadata } from 'next';
 import localFont from 'next/font/local';
 import './globals.css';
+import CookieConsent from '@/components/CookieConsent';
 
 const geistSans = localFont({
   src: './fonts/GeistVF.woff',
@@ -107,6 +108,7 @@ export default function RootLayout({
       </head>
       <body className={`${geistSans.variable} font-sans antialiased bg-[#030014] text-gray-200`}>
         {children}
+        <CookieConsent />
       </body>
     </html>
   );
