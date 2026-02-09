@@ -1,5 +1,5 @@
 import type { Metadata } from 'next';
-import { Shield, FileText, Server, Cookie, Lock, Mail, Eye, Database } from 'lucide-react';
+import { Shield, FileText, Server, Cookie, Lock, Mail, Eye, Database, Globe } from 'lucide-react';
 import Header from '../../components/Header';
 import Footer from '../../components/Footer';
 
@@ -212,6 +212,110 @@ export default function DatenschutzPage() {
                   gew&auml;hrleistet, dass dieser die personenbezogenen Daten unserer
                   Websitebesucher nur nach unseren Weisungen und unter Einhaltung der
                   DSGVO verarbeitet.
+                </p>
+              </div>
+
+              <div className="space-divider" />
+
+              {/* 3a. Externe Dienste und Datenverarbeitung */}
+              <div>
+                <div className="flex items-center gap-3 mb-6">
+                  <div className="w-10 h-10 rounded-lg bg-gradient-to-br from-violet-600 to-pink-600 flex items-center justify-center">
+                    <Globe className="h-5 w-5 text-white" />
+                  </div>
+                  <h2 className="text-2xl font-bold text-white">
+                    Externe Dienste und Datenverarbeitung
+                  </h2>
+                </div>
+
+                <h3 className="text-lg font-semibold text-white mb-3">
+                  Datenverarbeitung ausschlie&szlig;lich in der EU
+                </h3>
+                <p className="text-gray-300 leading-relaxed mb-4">
+                  Wir legen gro&szlig;en Wert auf den Schutz Ihrer Daten. Alle von uns
+                  eingesetzten Dienste und Server befinden sich <strong className="text-white">ausschlie&szlig;lich
+                  innerhalb der Europ&auml;ischen Union</strong>. Es findet keine
+                  &Uuml;bermittlung personenbezogener Daten in Drittl&auml;nder
+                  (au&szlig;erhalb der EU/EWR) statt.
+                </p>
+                <ul className="list-disc list-inside text-gray-300 space-y-1 mb-6 ml-4">
+                  <li><strong className="text-white">Webserver:</strong> Deutschland (IONOS)</li>
+                  <li><strong className="text-white">E-Mail-Versand:</strong> Deutschland/Frankreich (Brevo)</li>
+                  <li><strong className="text-white">Video-CDN:</strong> EU-Server (BunnyCDN)</li>
+                  <li><strong className="text-white">Datenbank:</strong> Deutschland (IONOS)</li>
+                </ul>
+
+                <h3 className="text-lg font-semibold text-white mb-3">
+                  E-Mail-Versand (Brevo)
+                </h3>
+                <p className="text-gray-300 leading-relaxed mb-4">
+                  F&uuml;r den Versand von E-Mails (z.B. Registrierungsbest&auml;tigungen,
+                  Benachrichtigungen, Passwort-Zur&uuml;cksetzen) nutzen wir den Dienst{' '}
+                  <strong className="text-white">Brevo</strong> (ehemals Sendinblue).
+                </p>
+                <p className="text-gray-300 leading-relaxed mb-2">
+                  Anbieter: Sendinblue GmbH, K&ouml;penicker Stra&szlig;e 126, 10179 Berlin, Deutschland<br />
+                  Serverstandort: EU (Deutschland/Frankreich)<br />
+                  Verarbeitete Daten: E-Mail-Adresse, Name, E-Mail-Inhalt<br />
+                  Rechtsgrundlage: Art. 6 Abs. 1 lit. b DSGVO (Vertragserf&uuml;llung)<br />
+                  Datenschutzerkl&auml;rung:{' '}
+                  <a
+                    href="https://www.brevo.com/de/legal/privacypolicy/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="text-violet-400 hover:text-violet-300 transition-colors underline underline-offset-2"
+                  >
+                    https://www.brevo.com/de/legal/privacypolicy/
+                  </a>
+                </p>
+                <p className="text-gray-300 leading-relaxed mb-6">
+                  Der E-Mail-Versand erfolgt zentral &uuml;ber die Domain genieportal.de
+                  (Absender: noreply@genieportal.de, Antworten: support@genieportal.de).
+                </p>
+
+                <h3 className="text-lg font-semibold text-white mb-3">
+                  Video-Hosting und Content Delivery (BunnyCDN)
+                </h3>
+                <p className="text-gray-300 leading-relaxed mb-4">
+                  F&uuml;r das Hosting und die Auslieferung von Videos nutzen wir den Dienst{' '}
+                  <strong className="text-white">BunnyCDN</strong>.
+                </p>
+                <p className="text-gray-300 leading-relaxed mb-2">
+                  Anbieter: BunnyWay d.o.o., Cesta komandanta Staneta 4A, 1215 Medvode, Slowenien<br />
+                  Serverstandort: EU<br />
+                  Verarbeitete Daten: IP-Adresse, Browsertyp, abgerufene Inhalte<br />
+                  Rechtsgrundlage: Art. 6 Abs. 1 lit. f DSGVO (berechtigtes Interesse)<br />
+                  Datenschutzerkl&auml;rung:{' '}
+                  <a
+                    href="https://bunny.net/privacy"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="text-violet-400 hover:text-violet-300 transition-colors underline underline-offset-2"
+                  >
+                    https://bunny.net/privacy
+                  </a>
+                </p>
+                <p className="text-gray-300 leading-relaxed mb-6">
+                  Videos werden &uuml;ber die Domain <strong className="text-white">cdn.genieportal.de</strong> ausgeliefert.
+                </p>
+
+                <h3 className="text-lg font-semibold text-white mb-3">
+                  Zentrale Dienste &uuml;ber genieportal.de
+                </h3>
+                <p className="text-gray-300 leading-relaxed mb-4">
+                  Genieportal.de ist die zentrale Plattform des Genie-Netzwerks. Folgende
+                  Dienste werden zentral bereitgestellt:
+                </p>
+                <ul className="list-disc list-inside text-gray-300 space-y-1 mb-4 ml-4">
+                  <li><strong className="text-white">E-Mail-Versand:</strong> Alle automatischen E-Mails werden &uuml;ber genieportal.de versendet (Absender: noreply@genieportal.de)</li>
+                  <li><strong className="text-white">Video-Hosting:</strong> Videos werden &uuml;ber cdn.genieportal.de ausgeliefert</li>
+                  <li><strong className="text-white">API-Dienste:</strong> Backend-Funktionen werden &uuml;ber api.genieportal.de bereitgestellt</li>
+                </ul>
+                <p className="text-gray-300 leading-relaxed">
+                  <strong className="text-white">Verantwortlich f&uuml;r alle Genie-Dienste:</strong><br />
+                  Butterflies IT UG (haftungsbeschr&auml;nkt)<br />
+                  Hagenower Str. 73, 19061 Schwerin<br />
+                  E-Mail: info@genieportal.de
                 </p>
               </div>
 
