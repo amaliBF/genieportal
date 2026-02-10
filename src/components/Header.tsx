@@ -3,17 +3,20 @@
 import { useState } from 'react';
 import Link from 'next/link';
 import { Orbit, Menu, X } from 'lucide-react';
+import { LoginButton, UserMenu, useAuth } from '@/lib/genie-auth';
 
 const navLinks = [
   { href: '/bereiche', label: 'Bereiche' },
   { href: '/app', label: 'Die App' },
   { href: '/fuer-unternehmen', label: 'Für Unternehmen' },
-  { href: '/konzept', label: 'Konzept' },
-  { href: '/kontakt', label: 'Kontakt' },
+  { href: '/fuer-bewerber', label: 'Für Bewerber' },
+  { href: '/ueber-uns', label: 'Über uns' },
+  { href: '/hilfe', label: 'Hilfe' },
 ];
 
 export default function Header() {
   const [mobileOpen, setMobileOpen] = useState(false);
+  const { isLoggedIn, isLoading } = useAuth();
 
   return (
     <nav className="fixed top-0 w-full z-50">
@@ -40,12 +43,7 @@ export default function Header() {
             </div>
 
             <div className="hidden lg:flex items-center gap-3">
-              <Link
-                href="https://dashboard.genieportal.de/login"
-                className="text-sm font-medium text-gray-400 hover:text-white transition-colors"
-              >
-                Login
-              </Link>
+              {!isLoading && (isLoggedIn ? <UserMenu /> : <LoginButton />)}
               <Link
                 href="https://dashboard.genieportal.de/register"
                 className="rounded-full bg-gradient-to-r from-violet-600 to-pink-600 px-5 py-2 text-sm font-medium text-white hover:from-violet-500 hover:to-pink-500 transition-all shadow-lg shadow-violet-500/25"
@@ -77,13 +75,9 @@ export default function Header() {
                   </Link>
                 ))}
                 <hr className="my-2 border-violet-500/10" />
-                <Link
-                  href="https://dashboard.genieportal.de/login"
-                  className="text-sm font-medium text-gray-400 hover:text-white px-3 py-2.5 rounded-lg transition-colors"
-                  onClick={() => setMobileOpen(false)}
-                >
-                  Login
-                </Link>
+                <div className="px-3 py-2">
+                  {!isLoading && (isLoggedIn ? <UserMenu /> : <LoginButton />)}
+                </div>
                 <Link
                   href="https://dashboard.genieportal.de/register"
                   className="text-sm font-medium text-center text-white bg-gradient-to-r from-violet-600 to-pink-600 px-4 py-2.5 rounded-full mt-1"
