@@ -127,8 +127,18 @@ const portals = [
 ];
 
 export default function BereichePage() {
+  const breadcrumbJsonLd = {
+    '@context': 'https://schema.org',
+    '@type': 'BreadcrumbList',
+    itemListElement: [
+      { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://genieportal.de' },
+      { '@type': 'ListItem', position: 2, name: 'Bereiche' },
+    ],
+  };
+
   return (
     <div className="min-h-screen bg-[#030014]">
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbJsonLd) }} />
       <Header />
 
       {/* Hero */}
@@ -137,6 +147,13 @@ export default function BereichePage() {
         <div className="absolute -bottom-20 -left-40 w-[400px] h-[400px] bg-pink-600/10 rounded-full blur-[120px]" />
 
         <div className="max-w-5xl mx-auto relative z-10 text-center">
+          <nav className="text-sm text-gray-400 mb-4" aria-label="Breadcrumb">
+            <ol className="flex flex-wrap items-center gap-1 justify-center">
+              <li><Link href="/" className="hover:text-violet-400 transition-colors">Home</Link></li>
+              <li className="text-gray-600">/</li>
+              <li className="text-violet-400 font-medium">Bereiche</li>
+            </ol>
+          </nav>
           <div className="inline-flex items-center gap-2 rounded-full bg-white/5 border border-violet-500/20 px-5 py-2 text-sm text-violet-300 mb-8 backdrop-blur-sm">
             <Orbit className="h-4 w-4" />
             <span>5 Portale, 1 System</span>

@@ -36,8 +36,18 @@ export const metadata: Metadata = {
 };
 
 export default function FuerUnternehmenPage() {
+  const breadcrumbJsonLd = {
+    '@context': 'https://schema.org',
+    '@type': 'BreadcrumbList',
+    itemListElement: [
+      { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://genieportal.de' },
+      { '@type': 'ListItem', position: 2, name: 'Für Unternehmen' },
+    ],
+  };
+
   return (
     <div className="min-h-screen bg-[#030014]">
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbJsonLd) }} />
       <Header />
 
       {/* Hero */}
@@ -46,6 +56,13 @@ export default function FuerUnternehmenPage() {
         <div className="absolute -bottom-20 -left-40 w-[400px] h-[400px] bg-pink-600/10 rounded-full blur-[120px]" />
 
         <div className="max-w-5xl mx-auto relative z-10 text-center">
+          <nav className="text-sm text-gray-400 mb-4" aria-label="Breadcrumb">
+            <ol className="flex flex-wrap items-center gap-1 justify-center">
+              <li><Link href="/" className="hover:text-violet-400 transition-colors">Home</Link></li>
+              <li className="text-gray-600">/</li>
+              <li className="text-violet-400 font-medium">Für Unternehmen</li>
+            </ol>
+          </nav>
           <div className="inline-flex items-center gap-2 rounded-full bg-white/5 border border-violet-500/20 px-5 py-2 text-sm text-violet-300 mb-8 backdrop-blur-sm">
             <Building2 className="h-4 w-4" />
             <span>Für Arbeitgeber</span>
@@ -355,29 +372,6 @@ export default function FuerUnternehmenPage() {
                 </a>
               </div>
             ))}
-          </div>
-        </div>
-      </section>
-
-      {/* Testimonial */}
-      <section className="py-20 px-4 sm:px-6 lg:px-8 relative">
-        <div className="space-divider mb-20" />
-        <div className="max-w-3xl mx-auto">
-          <div className="glow-card p-8 sm:p-10 text-center">
-            <p className="text-gray-300 leading-relaxed italic text-lg">
-              &ldquo;Seit wir auf Genie sind, bekommen wir Bewerbungen von Leuten,
-              die wirklich wissen worauf sie sich einlassen. Die Qualität der Matches
-              ist unglaublich.&rdquo;
-            </p>
-            <div className="mt-6 flex items-center justify-center gap-3">
-              <div className="w-10 h-10 rounded-full bg-gradient-to-br from-violet-500 to-pink-600 flex items-center justify-center text-white text-sm font-bold">
-                EM
-              </div>
-              <div className="text-left">
-                <p className="text-sm font-semibold text-white">Elektro Müller GmbH</p>
-                <p className="text-xs text-gray-500">Augsburg</p>
-              </div>
-            </div>
           </div>
         </div>
       </section>

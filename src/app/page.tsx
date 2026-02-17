@@ -611,24 +611,6 @@ export default function HomePage() {
             ))}
           </div>
 
-          {/* Testimonial */}
-          <div className="glow-card p-8 sm:p-10 max-w-3xl mx-auto text-center">
-            <p className="text-gray-300 leading-relaxed italic">
-              &ldquo;Seit wir auf Genie sind, bekommen wir Bewerbungen von Leuten,
-              die wirklich wissen worauf sie sich einlassen. Die Qualität der Matches
-              ist unglaublich.&rdquo;
-            </p>
-            <div className="mt-6 flex items-center justify-center gap-3">
-              <div className="w-10 h-10 rounded-full bg-gradient-to-br from-violet-500 to-pink-600 flex items-center justify-center text-white text-sm font-bold">
-                EM
-              </div>
-              <div className="text-left">
-                <p className="text-sm font-semibold text-white">Elektro Müller GmbH</p>
-                <p className="text-xs text-gray-500">Augsburg</p>
-              </div>
-            </div>
-          </div>
-
           <div className="text-center mt-10">
             <Link
               href="https://dashboard.genieportal.de/register"

@@ -10,27 +10,34 @@ export default function ContactForm() {
   const [message, setMessage] = useState('');
   const [sending, setSending] = useState(false);
   const [sent, setSent] = useState(false);
+  const [error, setError] = useState('');
 
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
     setSending(true);
+    setError('');
 
-    // Construct mailto link with form data
-    const mailtoSubject = encodeURIComponent(
-      subject || 'Kontaktanfrage über genieportal.de'
-    );
-    const mailtoBody = encodeURIComponent(
-      `Name: ${name}\nE-Mail: ${email}\n\n${message}`
-    );
+    try {
+      const res = await fetch('https://api.genieportal.de/v1/api/public/contact', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({
+          name,
+          email,
+          subject: subject || 'Allgemeine Anfrage',
+          message,
+          domain: 'genieportal.de',
+        }),
+      });
 
-    // Open email client
-    window.location.href = `mailto:support@genieportal.de?subject=${mailtoSubject}&body=${mailtoBody}`;
+      if (!res.ok) throw new Error('Senden fehlgeschlagen');
 
-    // Show success after short delay
-    setTimeout(() => {
-      setSending(false);
       setSent(true);
-    }, 1000);
+    } catch {
+      setError('Beim Senden ist ein Fehler aufgetreten. Bitte versuchen Sie es erneut.');
+    } finally {
+      setSending(false);
+    }
   };
 
   if (sent) {
@@ -39,10 +46,9 @@ export default function ContactForm() {
         <div className="inline-flex items-center justify-center w-16 h-16 rounded-full bg-green-500/20 mb-4">
           <Check className="h-8 w-8 text-green-400" />
         </div>
-        <h3 className="text-xl font-semibold text-white mb-2">Vielen Dank!</h3>
+        <h3 className="text-xl font-semibold text-white mb-2">Nachricht gesendet!</h3>
         <p className="text-gray-400">
-          Ihr E-Mail-Programm wurde geöffnet. Senden Sie die Nachricht ab
-          und wir melden uns schnellstmöglich bei Ihnen.
+          Vielen Dank für Ihre Nachricht. Wir melden uns in der Regel innerhalb von 24 Stunden bei Ihnen.
         </p>
         <button
           onClick={() => { setSent(false); setName(''); setEmail(''); setSubject(''); setMessage(''); }}
@@ -115,6 +121,10 @@ export default function ContactForm() {
           className="w-full rounded-xl bg-white/5 border border-white/10 px-4 py-3 text-white placeholder-gray-600 focus:outline-none focus:ring-2 focus:ring-violet-500/50 focus:border-violet-500/50 transition-colors text-sm resize-none"
         />
       </div>
+
+      {error && (
+        <p className="text-sm text-red-400 bg-red-500/10 border border-red-500/20 rounded-lg px-4 py-2">{error}</p>
+      )}
 
       <button
         type="submit"
